@@ -239,6 +239,12 @@ const encrypt = async (
 ): Promise<Ciphertext> => {
   const mimc7 = await buildMimc7();
   // [assignment] generate the IV, use Mimc7 to hash the shared key with the IV, then encrypt the plain text
+  const iv = mimc7.getIV();
+
+  return {
+    iv,
+    data: 
+  }
 };
 
 /*
